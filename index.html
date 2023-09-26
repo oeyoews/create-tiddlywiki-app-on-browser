@@ -164,7 +164,18 @@
             }
           } else {
             // No fileHandle given. Prompt user to choose one from disk
-            [fileHandle] = await window.showOpenFilePicker();
+            [fileHandle] = await window.showOpenFilePicker({
+              types: [
+                {
+                  description: "HTML files",
+                  accept: {
+                    "text/html": [".html", ".htm"],
+                  },
+                },
+              ],
+              multiple: false,
+              // excludeAcceptAllOption: true,
+            });
           }
           const file = await fileHandle.getFile();
           const contents = await file.text();
