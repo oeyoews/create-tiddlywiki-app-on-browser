@@ -4,6 +4,10 @@
 
 <!-- > 使用 fileapi -->
 <!-- > https://developer.mozilla.org/en-US/docs/Web/API/Window/showOpenFilePicker -->
+## Feature
+
+- [ ] 支持pwa, 友好一键安装到桌面
+- [ ] 支持external-js, 提升保存效率, 减少容量占用
 
 ## TODO
 
